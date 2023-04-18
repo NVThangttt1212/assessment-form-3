@@ -1,0 +1,152 @@
+@import "header";
+@import "mixin";
+@import "slider";
+@import "content";
+@import "variables";
+@import "footer";
+@import "responsive";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Lato', sans-serif;
+  background-color: #ccc;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F2F3F5;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.icon-down{
+
+}
+.icon-up{
+  display: none;
+}
+
+.container{
+  display: flex;
+  justify-content: flex-end;
+  .aside{
+    background-color: #0C1245;
+    width: 282px;
+    animation: {
+      name: aside;
+      duration: 0.4s;
+    };
+    @keyframes aside {
+      from{left:-282px }
+      to{ left: 0 }
+    }
+    .logo{
+      margin-top: 24px;
+      text-align: center;
+      margin-bottom: 48px;
+      img{
+        max-width: 100%;
+      }
+    }
+    .aside__section{
+      margin: 0 16px;
+      .aside__list{
+        @include l-style-none();
+        .aside__list--item{
+
+          span{
+            color: #fff;
+          }
+          i{
+            color: #fff;
+          }
+          &:first-child{
+            border:{
+              top:1px solid rgba(255, 255, 255, 0.1);
+              bottom:1px solid rgba(255, 255, 255, 0.1);
+            };
+            height: 56px;
+            justify-content: space-between;
+            @include centerY();
+            .aside__list--item-img{
+              height: 56px;
+              @include centerY();
+              img{
+                margin-right: 16px;
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .aside__list--item-icon{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              span{
+                font:{
+                  size: 18px;
+                  weight: 700;
+                }
+
+                display: flex;
+                align-items: center;
+              }
+              i{
+                font-size: 18px;
+                padding: 19px;
+                cursor: pointer;
+              }
+            }
+
+          }
+        }
+        .subAside__list{
+          display: none;
+          padding: 10px 0;
+          transition-duration:2s;
+
+          @include l-style-none();
+          .subAside__list--item{
+            height: 48px;
+            margin-left: 40px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 48px;
+          }
+        }
+        .activeAside{
+          display: block;
+        }
+
+      }
+    }
+  }
+  main{
+    width: calc(100% - 282px);
+
+    .overlay{
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+      animation: {
+        name: overlay;
+        duration:0.3s;
+      };
+    }
+    @keyframes overlay {
+    from {opacity: 0}
+    to {opacity: 1}
+    }
+  }
+}
+

@@ -1,0 +1,85 @@
+@import "variables";
+@mixin centerY {
+  display: flex;
+  align-items: center;
+}
+@mixin border{
+  border-radius: 6px;
+}
+
+@mixin l-style-none{
+  list-style: none;
+}
+
+@mixin showSlider{
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  color: $color-Main;
+  background-color:#F2F3F5;
+  cursor: pointer;
+  &:hover{
+    opacity: 0.7;
+  }
+  i{
+    margin-left: 8px;
+    font-size: 16px;
+  }
+}
+
+@mixin active-item{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+@mixin hoverBtn{
+    opacity: 0.8;
+}
+
+@mixin present{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  min-width: 164px;
+  min-height: 149px;
+}
+
+@mixin presentImg{
+  top: 6px;
+  left: -24px;
+  padding: 8px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+
+@mixin presentBtn{
+  position: absolute;
+  padding: 6px 12px;
+  border: none;
+  color: #fff;
+
+}
+
+@mixin presentP{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin:{
+    top: 27px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+  }
+}
+@mixin footerDescribe{
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}

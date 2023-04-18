@@ -1,0 +1,125 @@
+@import "variables";
+@import "mixin";
+.header{
+
+}
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+
+  .header__nav--menu{
+    display: flex;
+    .header__nav--img{
+      display: none;
+    }
+    i{
+      cursor: pointer;
+      font-size: 24px;
+      padding: 16px;
+      color: $color-Main;
+      &:hover{
+        transform: rotate(3.142rad);
+      }
+    }
+    span{
+      line-height: 56px;
+      font-size: $font-SizeText;
+    }
+    :nth-child(3){
+      margin: 0 4px;
+    }
+  }
+  .header__nav--right{
+    display: flex;
+    height: 56px;
+    .header__right__lang{
+      display: flex;
+      cursor: pointer;
+      line-height: 56px;
+      .header__right__lang--itemVN{
+        display: none;
+      }
+      .iconLang{
+        font-size: $font-SizeText;
+        display: flex;
+        justify-content: center;
+        padding: {
+          top: 20px;
+          right: 20px;
+          bottom: 20px;
+          left: 10px;
+
+        };
+        &:hover{
+          color: $color-Main;
+        }
+      }
+      img{
+        height: 15px;
+      }
+      span{
+        font-size: 18px;
+        }
+      }
+
+      .header__right__lang--item{
+        display: none;
+      }
+      .activeLang{
+        display: block;
+      }
+    }
+
+    .header__right--search{
+      margin-right: 36px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i{
+        cursor: pointer;
+        font-size: 24px;
+        padding: 11px;
+      }
+      &:hover{
+        color: red;
+        transform: scale3d(1.2, 1.2, 1.2);
+      }
+    }
+  }
+.header__nav--span_tabMo{
+  display: none;
+  margin: {
+    left: 28px;
+    top: 13px;
+  };
+  span{
+    font-size: $font-SizeText;
+    font-weight: $font-weight400;
+    line-height: 19px;
+  }
+}
+.header__heading{
+  margin:{
+    top: 30px;
+    bottom: 30px;
+    left: 54px;
+  }
+  font-family: Oswald;
+  text-transform: uppercase;
+  h1,span,.casinosMobi{
+    font-size: 32px;
+    font-weight: $font-weight700;
+    line-height: 47px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  span{
+    color: $color-Main;
+  }
+  .casinosMobi{
+    display: none;
+  }
+}
+

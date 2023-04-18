@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixin";
+.footer{
+  border-top: 3px solid #BBBBBB;
+  margin: {
+    left: 56px;
+    right: 56px;
+    bottom: 61px;
+  };
+  padding-top: 51px;
+  display: flex;
+  align-items: center;
+  .footer__list{
+    margin-bottom: 24px;
+    .footer__list--item{
+      cursor: pointer;
+      padding:{
+        left: 10px;
+        right: 11px;
+      };
+      font-size: $font-SizeText;
+      font-weight: $font-weight400;
+      line-height: 19px;
+      border-left: 1px solid#CCCCCC;
+      &:hover{
+        opacity: 0.7;
+      }
+      &:first-child{
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+    .activeFooter{
+      color: $color-Main;
+    }
+  }
+  .footer__describe{
+      @include footerDescribe()
+
+  }
+  .footer__describe--tablet{
+    display: none;
+    @include footerDescribe()
+  }
+}

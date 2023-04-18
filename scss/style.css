@@ -1,0 +1,2314 @@
+@charset "UTF-8";
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav .header__nav--menu {
+  display: flex;
+}
+.header__nav .header__nav--menu .header__nav--img {
+  display: none;
+}
+.header__nav .header__nav--menu i {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 16px;
+  color: #1E60E1;
+}
+.header__nav .header__nav--menu i:hover {
+  transform: rotate(3.142rad);
+}
+.header__nav .header__nav--menu span {
+  line-height: 56px;
+  font-size: 16px;
+}
+.header__nav .header__nav--menu :nth-child(3) {
+  margin: 0 4px;
+}
+.header__nav .header__nav--right {
+  display: flex;
+  height: 56px;
+}
+.header__nav .header__nav--right .header__right__lang {
+  display: flex;
+  cursor: pointer;
+  line-height: 56px;
+}
+.header__nav .header__nav--right .header__right__lang .header__right__lang--itemVN {
+  display: none;
+}
+.header__nav .header__nav--right .header__right__lang .iconLang {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+.header__nav .header__nav--right .header__right__lang .iconLang:hover {
+  color: #1E60E1;
+}
+.header__nav .header__nav--right .header__right__lang img {
+  height: 15px;
+}
+.header__nav .header__nav--right .header__right__lang span {
+  font-size: 18px;
+}
+.header__nav .header__nav--right .header__right__lang--item {
+  display: none;
+}
+.header__nav .header__nav--right .activeLang {
+  display: block;
+}
+.header__nav .header__right--search {
+  margin-right: 36px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav .header__right--search i {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 11px;
+}
+.header__nav .header__right--search:hover {
+  color: red;
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.header__nav--span_tabMo {
+  display: none;
+  margin-left: 28px;
+  margin-top: 13px;
+}
+.header__nav--span_tabMo span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.header__heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 54px;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+.header__heading h1, .header__heading span, .header__heading .casinosMobi {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.header__heading span {
+  color: #1E60E1;
+}
+.header__heading .casinosMobi {
+  display: none;
+}
+
+.slider {
+  margin-top: 20px;
+}
+.slider .slider__tab {
+  border-bottom: 3px solid #1E60E1;
+  padding-left: 54px;
+  display: flex;
+}
+.slider .slider__tab .slider__tab--btn {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  font-family: Oswald;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  margin-right: 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  line-height: 25px;
+}
+.slider .slider__tab .activeBtn {
+  background-color: #1E60E1;
+  color: #fff;
+}
+.slider .slider__text {
+  margin-left: 54px;
+  margin-right: 54px;
+  position: relative;
+  overflow: hidden;
+  height: 96px;
+}
+.slider .slider__text .slider__text--item {
+  display: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+.slider .slider__text .slider__text--item.activeText {
+  display: block;
+}
+.slider .slider__text img {
+  position: absolute;
+  bottom: -21%;
+  left: -20px;
+}
+.slider .slider__btn {
+  display: flex;
+  justify-content: center;
+}
+.slider .slider__btn .showMore {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  color: #1E60E1;
+  background-color: #F2F3F5;
+  cursor: pointer;
+}
+.slider .slider__btn .showMore:hover {
+  opacity: 0.7;
+}
+.slider .slider__btn .showMore i {
+  margin-left: 8px;
+  font-size: 16px;
+}
+.slider .slider__btn .showLess {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  color: #1E60E1;
+  background-color: #F2F3F5;
+  cursor: pointer;
+  display: none;
+}
+.slider .slider__btn .showLess:hover {
+  opacity: 0.7;
+}
+.slider .slider__btn .showLess i {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.mt {
+  margin-top: 24px;
+}
+
+.content {
+  border-radius: 6px;
+  margin-left: 56px;
+  margin-right: 56px;
+  margin-bottom: 56px;
+}
+.content .content__filter {
+  margin-top: 45px;
+}
+.content .content__filter .content__filter--active {
+  display: flex;
+  justify-content: space-between;
+}
+.content .content__filter .content__filter--active .content__active--item {
+  display: flex;
+  align-items: center;
+}
+.content .content__filter .content__filter--active .content__active--item:last-child {
+  cursor: pointer;
+  color: #1E60E1;
+  padding: 7px 12px;
+  border-radius: 6px;
+  background-color: rgba(30, 96, 225, 0.08);
+}
+.content .content__filter .content__filter--active .content__active--item:last-child img {
+  margin-right: 8px;
+}
+.content .content__filter .content__filter--active .content__active--item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.content .content__filter .content__filter--active .content__active--item p:last-child {
+  margin-left: 16px;
+}
+.content .content__filter .content__filter--active .content__active--item span {
+  background-color: #fff;
+  padding: 8px 10px;
+  margin: 0 8px;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.content .content__filter .content__filter--active .content__active--item span i {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+}
+.content .content__filter .content__filter--active .content__active--item button {
+  color: #1E60E1;
+  font-size: 16px;
+  padding: 8px 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #1E60E1;
+  cursor: pointer;
+}
+.content .content__filter .content__filter--active .content__active--item .content__active--item-active, .content .content__filter .content__filter--active .content__active--item .content__active--item-casino {
+  display: flex;
+  align-items: center;
+}
+.content .content__filter .content__filter--showing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.content .content__filter .content__filter--showing p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.content .content__filter .content__filter--showing p span {
+  font-weight: 600;
+}
+.content .content__filter .content__filter--showing p:last-child {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #DDDDDD;
+  padding: 7px 13px;
+}
+.content .content__ranking {
+  margin-top: 25px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1,
+.content .content__ranking .ranking__list .ranking__list--top2,
+.content .content__ranking .ranking__list .ranking__list--top3,
+.content .content__ranking .ranking__list .ranking__list--top4 {
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  display: flex;
+  border: 1px solid #E9EBEE;
+  margin-bottom: 16px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top4 {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  width: 192px;
+  background-color: #161735;
+  display: flex;
+  justify-content: center;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top2 img,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top3 img,
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top2 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top3 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top2 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top3 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top2 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top3 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top4 img {
+  width: 144px;
+  height: 144px;
+  margin-top: 24px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top2,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top2 {
+  background-color: #147B44;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top3,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top3 {
+  background-color: #AE0001;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .ranking__item--navbar-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .ranking__item--navbar-top4 {
+  background-color: #2A385B;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  width: calc(100% - 192px);
+  background-color: #fff;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top {
+  padding-left: 24px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E9EBEE;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--imgMobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--imgMobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--imgMobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--imgMobi {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--rating,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--rating,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--rating,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--rating {
+  display: flex;
+  align-items: center;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--rating h2,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--rating h2,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--rating h2,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--rating h2 {
+  font-family: Oswald;
+  color: #1E60E1;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 41px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--rating h2 span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--rating h2 span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--rating h2 span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--rating h2 span {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--rating h2 .info__top--rating-mobile,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--rating h2 .info__top--rating-mobile,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--rating h2 .info__top--rating-mobile,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--rating h2 .info__top--rating-mobile {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn-mobile,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn-mobile,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn-mobile,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn-mobile {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn {
+  display: flex;
+  align-items: center;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi {
+  display: flex;
+  align-items: center;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-tabMobi button {
+  background-color: #76C344;
+  color: #fff;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn button {
+  width: 106px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: none;
+  margin-right: 12px;
+  background-color: #F6BF31;
+  color: #fff;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn button img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn button img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn button img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn button img {
+  margin-right: 10px;
+  width: 15px;
+  height: 18px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-reached,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-reached,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-reached,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-reached {
+  display: flex;
+  line-height: 16.8px;
+  align-items: baseline;
+  margin-right: 26px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-reached span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-reached span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-reached span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-reached span {
+  color: #76C344;
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 4px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-reached p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-reached p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-reached p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-reached p {
+  font-size: 14px;
+  margin-right: 4px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn .info__top--btn-reached i,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn .info__top--btn-reached i,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn .info__top--btn-reached i,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn .info__top--btn-reached i {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  color: #1E60E1;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi {
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 {
+  width: 100%;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 {
+  width: 164px;
+  min-height: 191px;
+  min-width: 164px;
+  border: 5px solid #F6BF31;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  min-width: 164px;
+  min-height: 149px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnMb__present-top4 {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 .btnPc__present-top4 {
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span {
+  margin-bottom: 9px;
+  color: #1E60E1;
+  font-size: 14px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 img {
+  top: 6px;
+  left: -24px;
+  padding: 8px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F6BF31;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 button {
+  position: absolute;
+  padding: 6px 12px;
+  border: none;
+  color: #fff;
+  background-color: #F6BF31;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #0C1245;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 span {
+  margin-bottom: 9px;
+  color: #1E60E1;
+  font-size: 14px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  /* phần này là class chung */
+  /* phần này riêng  */
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi {
+  display: flex;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi {
+  display: flex;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check {
+  margin-right: 108px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(1),
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(1),
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(1),
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(1) {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(2),
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(2),
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(2),
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li img:nth-child(2) {
+  margin-right: 6px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check > li p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--list li,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--list li,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--list li,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--list li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present {
+  width: 164px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  min-width: 164px;
+  min-height: 149px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present img {
+  top: 6px;
+  left: -24px;
+  padding: 8px;
+  position: absolute;
+  border-radius: 50%;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present button {
+  position: absolute;
+  padding: 6px 12px;
+  border: none;
+  color: #fff;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnMb__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnMb__present-top4 {
+  display: none;
+  left: -4px;
+  top: -4px;
+  border-bottom-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top4,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnPc__present-top,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present .btnPc__present-top4 {
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 span,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top4 span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present span {
+  margin-bottom: 9px;
+  color: #1E60E1;
+  font-size: 14px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 {
+  border: 5px solid #E8317E;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 img {
+  background-color: #E8317E;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 button {
+  background-color: #E8317E;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1 p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #E8317E;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present {
+  text-align: center;
+  border: 5px solid #F6BF31;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present img {
+  background-color: #F6BF31;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present button {
+  background-color: #F6BF31;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present p {
+  color: #0C1245;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 27px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn {
+  padding-bottom: 24px;
+  display: flex;
+  padding-left: 24px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btnPc:first-child,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btnPc:first-child,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btnPc:first-child,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btnPc:first-child {
+  width: 196px;
+  background-color: #1E60E1;
+  color: #fff;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btnMobi,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btnMobi,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btnMobi,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btnMobi {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn button,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn button,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn button,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn button {
+  cursor: pointer;
+  height: 44px;
+  margin-right: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn button:hover,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn button:hover,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn button:hover,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn button:hover {
+  opacity: 0.8;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn button:nth-child(3),
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn button:nth-child(3),
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn button:nth-child(3),
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn button:nth-child(3) {
+  width: 150px;
+  color: #1E60E1;
+  background-color: rgba(30, 96, 225, 0.08);
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgba(30, 96, 225, 0.08);
+  color: #1E60E1;
+  min-width: 150px;
+  height: 44px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list p,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list p,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list p,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list .more__details--mb,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list .more__details--mb,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list .more__details--mb,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list .more__details--mb {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list i,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list i,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list i,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list i {
+  font-size: 18px;
+  padding: 10px 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list .iconLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list .iconLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list .iconLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list .iconLessDetail {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn .info__btn--list:hover,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn .info__btn--list:hover,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn .info__btn--list:hover,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn .info__btn--list:hover {
+  opacity: 0.8;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail {
+  display: none;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details {
+  margin-bottom: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #E9EBEE;
+  padding-left: 24px;
+  display: flex;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift {
+  width: 50%;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading {
+  display: flex;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift .more__details--gift-heading img {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul {
+  margin-top: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text {
+  margin-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text span,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text span,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text span,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--gift ul .more__details--gift-text span {
+  font-weight: 700;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--info,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--info,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--info,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--info {
+  width: 50%;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading {
+  display: flex;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading img,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading img,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading img,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--info .more__details--info-heading img {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul {
+  margin-top: 12px;
+}
+.content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul .more__details--info-text,
+.content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul .more__details--info-text,
+.content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul .more__details--info-text,
+.content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .handleMoreLessDetail .more__details .more__details--info ul .more__details--info-text {
+  margin-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.content .content__ranking .rank__list--btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+.content .content__ranking .rank__list--btn .rank__moreless--btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  width: 398px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #1E60E1;
+  color: #1E60E1;
+  cursor: pointer;
+}
+.content .content__ranking .rank__list--pages {
+  display: flex;
+  justify-content: space-between;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn {
+  margin-bottom: 61px;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .btn__page {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .btn__page:nth-child(6) {
+  cursor: default;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .btn__page:nth-child(6):hover {
+  background-color: #fff;
+  color: #000;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .btn__page:hover {
+  background-color: #1E60E1;
+  color: #fff;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .activeBtnPage {
+  background-color: #1E60E1;
+  color: #fff;
+}
+.content .content__ranking .rank__list--pages .rank__list--pagesBtn .rank__pages--describe p, .content .content__ranking .rank__list--pages .rank__list--pagesBtn .rank__pages--describe span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.content .content__ranking .nextpageMobi {
+  margin-top: 14px;
+  margin-bottom: 20px;
+  display: none;
+  justify-content: space-between;
+}
+.content .content__ranking .nextpageMobi button {
+  width: 170px;
+  height: 40px;
+  max-width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #1E60E1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content .content__ranking .nextpageMobi button i {
+  padding: 0 12px;
+  font-size: 16px;
+}
+.content .content__ranking .nextpageMobi .PreviousMobi {
+  margin-right: 10px;
+  background-color: #C3CFEA;
+  color: #7085B5;
+}
+.content .content__blogs {
+  background-color: #fff;
+  border-radius: 6px;
+  padding-bottom: 62px;
+  display: flex;
+  flex-flow: row-reverse;
+  padding-top: 19px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.content .content__blogs .content__blogs--list {
+  width: 76%;
+  padding-right: 24px;
+}
+.content .content__blogs .content__blogs--list .content__blogs--introduce p {
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border {
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr:nth-child(2) > td {
+  min-width: 94px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr:nth-child(3) > td {
+  min-width: 162px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #EEEEEE;
+  background-color: #EEEEEE;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr:first-child th:first-child {
+  text-align: left;
+  padding-left: 16px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr:last-child {
+  border: 1px solid #EEEEEE;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table tr th {
+  text-align: center;
+  height: 44px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table td {
+  height: 44px;
+  text-align: center;
+  border: 1px solid #EEEEEE;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .table__border .blog__filter--table td:first-child {
+  text-align: left;
+  padding-left: 16px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__filter--list {
+  padding-left: 0;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__filter--list > li {
+  list-style: none;
+  display: flex;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__filter--list > li p {
+  line-height: 32px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__filter--list > li img {
+  margin-top: 10px;
+  margin-right: 19px;
+  height: 12px;
+  width: 16px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__heading {
+  margin-top: 40px;
+  margin-bottom: 34px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .blog__text {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.content .content__blogs .content__blogs--list .content__list--blog ul {
+  margin-bottom: 18px;
+  padding-left: 17px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog ul li {
+  line-height: 24px;
+  font-size: 16px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .content__blog--note {
+  display: flex;
+  background-color: #F2F3F5;
+  border-radius: 6px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .content__blog--note img {
+  width: 18px;
+  height: 22px;
+  margin-left: 25px;
+  margin-right: 21px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog .content__blog--note p {
+  display: flex;
+  align-items: center;
+}
+.content .content__blogs .content__blogs--list .content__blog--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .content__blogs .content__blogs--list .content__blog--title i {
+  padding: 20px;
+  color: #1E60E1;
+}
+.content .content__blogs .content__blogs--list .content__blog--title .up__content--blog {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__blog--title .down__content--blog {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq {
+  padding-left: 0 !important;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq {
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #EEEEEE;
+  list-style: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading {
+  border-radius: 6px;
+  background-color: #F8F8F8;
+  padding-left: 24px;
+  padding-right: 12px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading .moreDescribeFaq {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading .activeLessFaq {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading .activeMoreFaq {
+  display: block;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading img {
+  width: 24px;
+  height: 24px;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item-heading img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .lessDescribeFaq:first-child {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .activeTextFaq {
+  display: block !important;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item--describe {
+  display: none;
+}
+.content .content__blogs .content__blogs--list .content__list--blog-faq .content__blog--item-faq .content__blog--item--describe p {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 41px;
+}
+.content .content__blogs .content__blog--menu {
+  position: sticky;
+  top: -4px;
+  width: 24%;
+  background-color: #F2F3F5;
+  border-radius: 6px;
+  height: 100%;
+}
+.content .content__blogs .content__blog--menu a {
+  text-decoration: none;
+  color: #000;
+}
+.content .content__blogs .content__blog--menu ul {
+  padding: 10px 10px 10px 0;
+}
+.content .content__blogs .content__blog--menu li {
+  cursor: pointer;
+  padding-left: 14px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.content .content__blogs .content__blog--menu li:hover {
+  opacity: 0.7;
+}
+.content .content__blogs .content__blog--menu .activeBlog {
+  font-weight: 700;
+  border-left: 3px solid #1E60E1;
+}
+.content .content__blogs .content__blog--menu .activeBlog > a {
+  color: #1E60E1;
+}
+.content .table__bordermobi {
+  padding: 12px;
+  display: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.content .table__bordermobi .blog__filter--table {
+  border-collapse: collapse;
+  border-radius: 6px;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+}
+.content .table__bordermobi .blog__filter--table tr:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border: 1px solid #EEEEEE;
+  background-color: #EEEEEE;
+}
+.content .table__bordermobi .blog__filter--table tr:first-child th:first-child {
+  text-align: left;
+  padding-left: 12px;
+}
+.content .table__bordermobi .blog__filter--table tr:last-child {
+  border: 1px solid #EEEEEE;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.content .table__bordermobi .blog__filter--table tr th {
+  text-align: center;
+  height: 44px;
+}
+.content .table__bordermobi .blog__filter--table td {
+  min-width: 72px;
+  max-width: 166px;
+  height: 44px;
+  text-align: center;
+  border: 1px solid #EEEEEE;
+}
+.content .table__bordermobi .blog__filter--table td:first-child {
+  text-align: left;
+  padding-left: 16px;
+}
+.content .moreMobile {
+  display: none;
+  height: 72px;
+  margin-top: 42px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+  border-top: 3px solid #BBBBBB;
+  border-bottom: 3px solid #BBBBBB;
+}
+.content .moreMobile h3 {
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content .moreMobile i {
+  color: #1E60E1;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.content .moreMobile .Content__Mobi--more {
+  display: none;
+}
+.content .filter__mobile {
+  display: none;
+  margin-top: 18px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+.content .filter__mobile div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  background-color: #fff;
+  width: 50%;
+  border: none;
+}
+.content .filter__mobile div button {
+  height: 28px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content .filter__mobile div button span {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.content .filter__mobile div .clarify__filter--item {
+  border-right: 1px solid #EEEEEE;
+}
+
+.footer {
+  border-top: 3px solid #BBBBBB;
+  margin-left: 56px;
+  margin-right: 56px;
+  margin-bottom: 61px;
+  padding-top: 51px;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__list {
+  margin-bottom: 24px;
+}
+.footer .footer__list .footer__list--item {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 11px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border-left: 1px solid #CCCCCC;
+}
+.footer .footer__list .footer__list--item:hover {
+  opacity: 0.7;
+}
+.footer .footer__list .footer__list--item:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+.footer .footer__list .activeFooter {
+  color: #1E60E1;
+}
+.footer .footer__describe {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.footer .footer__describe--tablet {
+  display: none;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+/* mobile & tablet */
+@media (max-width: 1023px) {
+  .container {
+    display: block;
+  }
+  .container .aside {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    display: none;
+    height: 100%;
+  }
+  .container .aside::-webkit-scrollbar {
+    width: 0 !important;
+    display: none !important;
+  }
+  .container .main {
+    width: 100% !important;
+  }
+  .container .main .header .header__nav {
+    background-color: #0C1245;
+    color: #fff;
+  }
+  .container .main .header .header__nav .header__nav--menu i {
+    color: #fff;
+  }
+  .container .main .header .header__nav .header__nav--menu .header__nav--span {
+    display: none;
+  }
+  .container .main .header .header__nav .header__nav--menu .header__nav--img {
+    display: flex;
+    height: 56px;
+  }
+  .container .main .header .header__nav .header__nav--menu .header__nav--img img {
+    height: 100%;
+  }
+  .container .main .header .header__nav .header__nav--right .header__right--search {
+    margin-right: 12px;
+  }
+  .container .main .header .header__nav--span_tabMo {
+    display: block;
+  }
+  .container .main .content .content__filter .content__filter--showing p:last-child {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param--list,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param--list,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param--list,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param--list {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present {
+    height: 100%;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--present-top1,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--present-top1,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--present-top1,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--present-top1 {
+    height: 100%;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__top .info__top--btn-tabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__top .info__top--btn-tabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__top .info__top--btn-tabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__top .info__top--btn-tabMobi {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi {
+    display: flex;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__btn {
+    margin-right: 0;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param {
+    margin-right: 0px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi > .content__rank--top4 > .info__param > .info__param--present {
+    display: block;
+    min-height: 191px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .content__rank--top4-tabmobi .info__param--present-top4 {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param {
+    margin-right: 25px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi {
+    width: 100%;
+    display: block;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button {
+    width: 106px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    margin-right: 12px;
+    background-color: #76C344;
+    color: #fff;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button img,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button img,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button img,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile button img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached {
+    display: flex;
+    line-height: 16.8px;
+    align-items: baseline;
+    margin-right: 26px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached span,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached span,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached span,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached span {
+    color: #76C344;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached p,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached p,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached p,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached p {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached i,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached i,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached i,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__top--btn-tabMobile .info__top--btn-reached i {
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    color: #1E60E1;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--contentTabMobi {
+    justify-content: space-between;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__param .info__param--TabMobi .info__param--check,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__param .info__param--TabMobi .info__param--check {
+    margin-right: 0;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1 .rank__item--info .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2 .rank__item--info .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3 .rank__item--info .info__btn,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 .rank__item--info .info__btn {
+    margin-right: 12px !important;
+    padding-left: 12px;
+    justify-content: space-between;
+    margin-top: 34px;
+    margin-right: 25px;
+  }
+  .container .main .content .content__blogs {
+    display: block;
+  }
+  .container .main .content .content__blogs .content__blog--menu {
+    width: 100%;
+    margin-bottom: 42px;
+  }
+  .container .main .content .content__blogs .content__blogs--list {
+    width: 100%;
+  }
+}
+/* >= Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container main .header .header__nav .header__nav--menu .header__nav--img {
+    padding: 6px;
+  }
+  .container main .header .header__nav .header__nav--menu .header__nav--img .logoMobile {
+    display: none;
+  }
+  .container main .header .header__heading {
+    margin-left: 28px;
+  }
+  .container main .slider .slider__tab {
+    padding-left: 28px;
+  }
+  .container main .slider .slider__text {
+    margin-left: 28px;
+  }
+  .container main .content {
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-bottom: 56px;
+  }
+  .container main .content .content__filter .content__filter--active {
+    display: flex;
+  }
+  .container main .content .content__filter .content__filter--active .content__active--item {
+    display: block;
+  }
+  .container main .content .content__filter .content__filter--active .content__active--item button {
+    padding: 0 10px;
+    height: 28px;
+  }
+  .container main .content .content__filter .content__filter--active .content__active--item span {
+    height: 28px;
+    padding: 3px 10px;
+  }
+  .container main .content .content__filter .content__filter--active .content__active--item .content__active--item-casino {
+    margin-top: 21px;
+  }
+  .container main .content .content__filter .content__filter--active .content__active--item:last-child {
+    height: 28px;
+    padding: 4px 10px;
+  }
+  .container main .content .content__blogs {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin: 0 -28px;
+  }
+  .container main .content .content__blogs .content__blogs--list {
+    padding: 0;
+  }
+  .container main .footer {
+    padding-left: 28px;
+    margin: 0;
+    display: block;
+  }
+  .container main .footer .footer__list {
+    display: flex;
+  }
+  .container main .footer .footer__describe--tablet {
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 73px;
+  }
+  .container main .footer .footer__describe {
+    display: none;
+  }
+}
+/* mobile */
+@media (max-width: 739px) {
+  .container .main .header .header__nav .header__nav--menu .header__nav--img {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+  .container .main .header .header__nav .header__nav--menu .header__nav--img .logoTablet {
+    display: none;
+  }
+  .container .main .header .header__nav .header__right--search {
+    margin: 0;
+  }
+  .container .main .header .header__nav .header__right__lang .iconLang {
+    padding-right: 10px;
+  }
+  .container .main .header .header__nav--span_tabMo,
+  .container .main .header .header__heading {
+    margin-left: 12px;
+  }
+  .container .main .header .header__heading h1 {
+    display: flex;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .container .main .header .header__heading h1 span {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .container .main .header .header__heading h1 .casinosMobi {
+    display: block;
+    margin-left: 4px;
+  }
+  .container .main .header .header__heading h1 .casinosPc {
+    display: none;
+  }
+  .container .main .slider .slider__tab--overflowX {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+  }
+  .container .main .slider .slider__tab--overflowX .slider__tab {
+    width: 612px;
+    padding-left: 12px;
+  }
+  .container .main .slider .slider__tab--overflowX::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+  .container .main .slider .slider__text {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .container .main .content {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 56px;
+  }
+  .container .main .content .content__filter {
+    margin-top: 31px;
+  }
+  .container .main .content .content__filter .content__filter--active {
+    display: none;
+  }
+  .container .main .content .content__filter .content__filter--showing {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .container .main .content .content__ranking {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__item--navbar-top1,
+  .container .main .content .content__ranking .ranking__list .ranking__item--navbar-top2,
+  .container .main .content .content__ranking .ranking__list .ranking__item--navbar-top3,
+  .container .main .content .content__ranking .ranking__list .ranking__item--navbar-top4 {
+    display: none;
+    border: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .ranking__list--top1,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top2,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top3,
+  .container .main .content .content__ranking .ranking__list .ranking__list--top4 {
+    border-radius: 0;
+    border: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top {
+    border: none;
+    padding-left: 12px;
+    align-items: center;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--imgMobi {
+    display: block;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating h2 {
+    margin-left: 11px;
+    display: flex;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating h2, .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating span, .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating .info__top--rating-mobile {
+    font-family: Oswald;
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating .info__top--rating-pctl {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--rating .info__top--rating-mobile {
+    display: block !important;
+    margin-left: 6px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--btn {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__top .info__top--btn-mobile {
+    display: block;
+    margin-right: 12px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param {
+    display: block;
+    margin-right: 12px !important;
+    margin-left: 12px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--TabMobi .info__param--check {
+    margin-bottom: 17px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 {
+    width: 100% !important;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 img,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present img,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present img,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 img {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .text__param--present,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .text__param--present,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .text__param--present,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .text__param--present {
+    display: flex;
+    align-items: center;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .text__param--present p,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .text__param--present p,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .text__param--present p,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .text__param--present p {
+    margin-left: 19px;
+    text-align: left;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 span,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present span,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present span,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 span {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnPc__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnPc__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnPc__present-top4 {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top1 .btnMb__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present .btnMb__present-top4,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top1,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top,
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__param .info__param--present-top4 .btnMb__present-top4 {
+    display: block;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn .info__btnPc {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn .info__btnMobi {
+    min-width: 94px;
+    display: block;
+    background-color: #1E60E1;
+    color: #fff;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn button {
+    color: #1E60E1;
+    background-color: rgba(30, 96, 225, 0.08);
+    width: 96px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn .info__btn--list {
+    padding-left: 8px;
+    min-width: 96px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn .info__btn--list .more__details--pc {
+    display: none;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .info__btn .info__btn--list .more__details--mb {
+    display: block;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .handleMoreLessDetail .more__details {
+    padding-left: 12px;
+    display: block;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .handleMoreLessDetail .more__details .more__details--gift {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .container .main .content .content__ranking .ranking__list .rank__item--info .handleMoreLessDetail .more__details .more__details--info {
+    width: 100%;
+  }
+  .container .main .content .content__ranking .rank__list--btn {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+  .container .main .content .content__ranking .rank__list--pages {
+    justify-content: center;
+  }
+  .container .main .content .content__ranking .rank__list--pages .rank__list--pagesBtn {
+    display: none;
+  }
+  .container .main .content .content__ranking .nextpageMobi {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .main .content .content__blogs {
+    margin-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .container .main .content .content__blogs .content__blog--menu {
+    display: none;
+  }
+  .container .main .content .content__blogs .content__blogs--list {
+    padding: 0;
+    width: 100%;
+  }
+  .container .main .content .content__blogs .content__blogs--list .content__blogs--introduce {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .container .main .content .content__blogs .content__blogs--list .content__list--blog {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .container .main .content .content__blogs .content__blogs--list .content__list--blog .blog__heading {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  .container .main .content .content__blogs .content__blogs--list .content__list--blog .table__border {
+    display: none;
+  }
+  .container .main .content .content__blogs .content__blog--title .down__content--blog {
+    display: block;
+  }
+  .container .main .content .content__blogs .blog__content {
+    display: none;
+  }
+  .container .main .content .table__bordermobi {
+    display: block;
+  }
+  .container .main .content .table__bordermobi .blog__filter--table tbody {
+    background-color: #fff;
+  }
+  .container .main .content .moreMobile {
+    display: flex;
+  }
+  .container .main .content .filter__mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .main .footer {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  background-color: #ccc;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F2F3F5;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.icon-up {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .aside {
+  background-color: #0C1245;
+  width: 282px;
+  animation-name: aside;
+  animation-duration: 0.4s;
+}
+@keyframes aside {
+  from {
+    left: -282px;
+  }
+  to {
+    left: 0;
+  }
+}
+.container .aside .logo {
+  margin-top: 24px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.container .aside .logo img {
+  max-width: 100%;
+}
+.container .aside .aside__section {
+  margin: 0 16px;
+}
+.container .aside .aside__section .aside__list {
+  list-style: none;
+}
+.container .aside .aside__section .aside__list .aside__list--item span {
+  color: #fff;
+}
+.container .aside .aside__section .aside__list .aside__list--item i {
+  color: #fff;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 56px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child .aside__list--item-img {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child .aside__list--item-img img {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child .aside__list--item-icon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child .aside__list--item-icon span {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.container .aside .aside__section .aside__list .aside__list--item:first-child .aside__list--item-icon i {
+  font-size: 18px;
+  padding: 19px;
+  cursor: pointer;
+}
+.container .aside .aside__section .aside__list .subAside__list {
+  display: none;
+  padding: 10px 0;
+  transition-duration: 2s;
+  list-style: none;
+}
+.container .aside .aside__section .aside__list .subAside__list .subAside__list--item {
+  height: 48px;
+  margin-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 48px;
+}
+.container .aside .aside__section .aside__list .activeAside {
+  display: block;
+}
+.container main {
+  width: calc(100% - 282px);
+}
+.container main .overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  animation-name: overlay;
+  animation-duration: 0.3s;
+}
+@keyframes overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
